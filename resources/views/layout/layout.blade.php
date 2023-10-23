@@ -412,19 +412,19 @@
                                 <span> {{ __('Users') }} </span>
                             </a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a href="{{ route('color.index') }}">
                                 <i class="mdi mdi-checkbox-blank-circle-outline"></i>
                                 <span> {{ __('Color') }} </span>
                             </a>
-                        </li>
+                        </li> --}}
                         <li>
                             <a href="{{ route('product.index') }}">
                                 <i class="mdi mdi-basket-outline"></i>
-                                <span> {{ __('Products') }} </span>
+                                <span> {{ __('Shop') }} </span>
                             </a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a href="{{ route('size.index') }}">
                                 <i class="mdi mdi-account-outline"></i>
                                 <span> {{ __('Sizes') }} </span>
@@ -441,7 +441,7 @@
                                 <i class="mdi mdi-format-list-bulleted"></i>
                                 <span> {{ __('Sub Category') }} </span>
                             </a>
-                        </li>
+                        </li> --}}
                         <li>
                     </ul>
 
