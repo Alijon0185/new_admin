@@ -17,12 +17,9 @@ return new class extends Migration
             $table->string('token')->unique()->nullable();
             $table->string('phone_number')->nullable();
             $table->string('password')->nullable();
-            $table->string('language')->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            $table->integer('role_id')->nullable();
-            $table->integer('company_id')->nullable();
-            $table->integer('address_id')->nullable();
             $table->integer('personal_info_id')->nullable();
+            $table->integer('role_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();

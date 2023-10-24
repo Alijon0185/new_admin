@@ -11,12 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('colors', function (Blueprint $table) {
+        Schema::create('shops', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
-            $table->string('code')->nullable();
+            $table->string('name', 100)->nullable();
+            $table->integer('user_id')->nullable();
+            $table->integer('object_id')->nullable();
+            $table->double('check_amount', 15, 8)->nullable();
+            $table->string('coupon')->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 
@@ -25,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('colors');
+         Schema::dropIfExists('shops');
     }
 };
