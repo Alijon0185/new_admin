@@ -21,11 +21,13 @@ class ShopsController extends Controller
      */
     public function create()
     {
+        // return 'sdfsdfs';
         // $subcategories = Category::where('parent_id', '!=', 0)->get();
         // $categories = Category::where('parent_id', 0)->orderBy('id', 'asc')->get();
         // $firstcategory = Category::where('parent_id', 0)->orderBy('id', 'asc')->first();
         // $colors = Color::all();
-        // return view('admin.products.create', ['subcategories'=> $subcategories, 'colors'=> $colors, 'categories'=> $categories, 'firstcategory'=> $firstcategory]);
+
+        return view('admin.products.create');
     }
 
     /**
